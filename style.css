@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.container {
+    margin: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Details and Summary Styling */
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Unordered Lists Styling */
+details ul, #sitemap ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0px 0;
+}
+
+#sitemap li {
+    margin: 0px 0;
+}
+
+
+
+
+/* Sitemap generation */
+.folder {
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.folder::before {
+    content: "📁 ";
+    margin-right: 0px;
+}
+
+.folder.expanded::before {
+    content: "📂 ";
+}
+
+/* Hidden Child Lists */
+.hidden {
+    display: none;
+}
+

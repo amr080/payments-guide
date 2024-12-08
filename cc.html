@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+       
+  </header>
+  <main>
+    <h1>Credit Card</h1>
+    <p>A card indicating the holder has been granted a line of credit. It enables the holder to make purchases or withdraw cash up to a prearranged ceiling. The credit granted can be settled in full by the end of a specified period or can be settled in part, with the balance taken as extended credit. Interest is charged based on the terms of the credit card agreement and the holder is sometimes charged an annual fee.</p>
+    <details id="api">
+        <summary><strong>Participants</strong></summary>
+        <ul>
+            <li>Cardholder</li>
+            <li>Cardholder's issuing bank</li>
+            <li>Merchant</li>
+            <li>Merchant's acquiring bank</li>
+            <li>Credit card association (e.g., Visa, MasterCard, Discover, AMEX, Diners Club)</li>
+        </ul>
+    </details>
+    <!-- Credit Card Transaction Process -->
+    <section id="transaction-process">
+  
+        <h3>Authorization</h3>
+        <ol>
+          <li>A consumer uses a credit card to pay a merchant.</li>
+          <li>The merchant sends the encrypted transaction data to a card merchant processor (e.g., First Data Merchant Services) for authorization.</li>
+          <li>The card merchant processor sends the transaction data to the consumer's issuing bank over the Visa or MasterCard network. The issuing bank is a licensed member of Visa or MasterCard and holds agreements with, and issues cards to, consumers.</li>
+          <li>The issuing bank authorizes the amount and issues an authorization code or declines the transaction.</li>
+          <li>The card merchant processor notifies the merchant that the transaction has been authorized or declined. The merchant requests the consumer's signature as authorization for the transaction or notifies the consumer that the transaction has been declined.</li>
+        </ol>
+  
+        <h3>Processing</h3>
+        <ol start="6">
+          <li>Once authorized, the transaction must be "captured" by the merchant. The capture uses information from the successful authorization to charge the authorized amount to the consumer's credit card. The merchant accumulates captures and credits into a batch, which will be settled as a group. The merchant submits the batch to the card merchant processor to finalize the transactions. (If the consumer returns goods after a transaction has been captured, a "credit" is generated.)</li>
+        </ol>
+  
+        <h3>Settlement</h3>
+        <ol start="7">
+          <li>The card merchant processor receives the information and settles the batch, then sends ACH items through the ACH operator to the issuing and merchant banks. The merchant's bank is the ODFI, with the card merchant processor serving as an authorized sending point. The operator settles transactions between the issuing and merchant banks. The merchant bank credits the merchant's account.</li>
+        </ol>
+      </section>
+
+
+      <p><a href="/">Home</a></p>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; 2024 X Financial Technologies</p>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
